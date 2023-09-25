@@ -1,0 +1,14 @@
+.image-block-grid-block{
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.image-block-grid-block a{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+

@@ -1,0 +1,17 @@
+@import './common/reset.css';
+@import './common/common.css';
+@import './common/container.css';
+@import './common/colors.css';
+@import './common/fonts.css';
+@import './common/typo.css';
+@import './elements/buttons.css';
+@import './elements/socials.css';
+@import './elements/search.css';
+@import './common/header/sale-offer.css';
+@import './common/header/upper-menu.css';
+@import './common/header/bottom-menu.css';
+@import './sections/main-offer.css';
+@import './elements/grid/image-block-grid-block.css';
+@import './elements/grid/rewiew-block-grid.css';
+@import './sections/services.css';
+@import './sections/about.css';

@@ -1,0 +1,29 @@
+.search{
+    width: 282px;
+    position: relative;
+}
+
+.search__input{
+    width: 100%;
+    border-bottom: 2px solid var(--darkest-neutral);
+    padding-block: 0px;
+    padding-inline: 0px;
+    padding-bottom: 10px;
+    color: var(--darkest-neutral);
+}
+
+.search__input--dark{
+    border-bottom: 2px solid var(--darkest-neutral);
+    color: var(--darkest-neutral);
+}
+
+
+.search__btn{
+    position: absolute;
+    z-index: 1;
+    right: 0px;
+    bottom: 10px;
+    width: 24px;
+    height: 24px;
+    background: url('../../ui-icons/search.svg') center right no-repeat;
+}

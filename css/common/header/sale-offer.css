@@ -1,0 +1,31 @@
+.sale-offer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background: var(--dark-accent);
+}
+
+.sale-offer__container{
+    height: 100%;
+}
+
+.sale-offer__inner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.sale-offer__text{
+    line-height: 19.5px;
+}
+
+.sale-offer__close-btn {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}

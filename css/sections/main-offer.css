@@ -1,0 +1,48 @@
+.main-offer{
+    margin-bottom: 180px;
+}
+
+.main-offer__elements{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.main-offer__title{
+    margin-bottom: 40px;
+}
+
+.main-offer__list{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: var(--accent);
+}
+
+.main-offer__list li{
+    position: relative;
+}
+
+.main-offer__list li::before{
+    content: '';
+    width: 23px;
+    height: 17px;
+    position: absolute;
+    top: 3.5px;
+    left: -43px;
+    background: url('../../ui-icons/blue-checked-icon.svg') center center no-repeat
+}
+
+.main__offer-btns button:not(:last-child) {
+    margin-right: 20px;
+}
+
+.main-offer__image{
+    display: block;
+    max-width: 100%;
+    padding: 0px 20px;
+    object-fit: cover;
+    margin: 0 auto;
+}

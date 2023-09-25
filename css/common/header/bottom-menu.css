@@ -1,0 +1,127 @@
+.bottom-menu{
+    height: 60px;
+    background: #3D3D3D;
+    width: 100%;
+    color: #fff;
+    margin-bottom: 65px;
+}
+
+.bottom-menu > .container {
+    height: 100%;
+}
+
+.bottom-menu__inner {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation{
+    height: 100%;
+}
+
+.navigation-list {
+    display: flex;
+    height: 100%;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.navigation-list li {
+    padding: 0px 20px;
+}
+
+.navigation-list li:hover, .navigation-list li:active{
+    background: var(--dark-accent);
+}
+
+
+.navigation-list li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.navigation-list li span{
+    position: relative;
+}
+
+.navigation-list ul:not(:first-child) {
+    display: none;
+    background: var(--accent);
+}
+
+/* .navigation-list li:hover > ul{
+    display: block;
+} */
+
+.first-level-menu > li{
+    /* position: relative; */
+    padding-right: 34px;
+}
+
+.first-level-menu > li > span::after{
+    content: '';
+    position: absolute;
+    right: -14px;
+    top: 50%;;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 7px;
+    background: url(../../../ui-icons/nav/arrow-down.svg) center center no-repeat;
+}
+
+
+
+
+.second-level-menu{
+    min-width: 300px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.second-level-menu > li {
+    /* position: relative; */
+    min-height: 48px;
+    padding: 14px 20px;
+}
+.second-level-menu > li::after, .third-level-menu > li::after  {
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: 50%;;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 12px;
+    background: url(../../../ui-icons/nav/arrow-right.svg) center center no-repeat;
+}
+
+
+
+.third-level-menu {
+    min-width: 300px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.third-level-menu > li {
+    /* position: relative; */
+    min-height: 48px;
+    padding: 14px 20px;
+}
+
+.bottom-menu__inner .search__input{
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+}
+
+.bottom-menu__inner .search__btn{
+    bottom: 18px;
+}

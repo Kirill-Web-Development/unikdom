@@ -1,0 +1,112 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-family: 'Ysabeau Infant', sans-serif;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%
+}
+
+h2 {
+    font-family: 'Ysabeau Infant', sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+h3 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+h4 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+h5 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.text {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.text--bold {
+    font-weight: 600;
+}
+
+.text--white {
+    color: #fff;
+}
+
+
+
+/* ====================MEDIA=================================== */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 68px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 42px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 360px) {
+    h3 {
+        font-size: 28px;
+    }
+
+    h4 {
+        font-size: 19px;
+    }
+
+    h5 {
+        font-size: 16px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+}
