@@ -15,6 +15,11 @@
     overflow: hidden;
 }
 
+.rewiew--block-grid__header{
+    display: flex;
+    justify-content: space-between;
+}
+
 .rewiew--block-grid__text{
     overflow: auto;
 }

@@ -1,0 +1,152 @@
+.materials{
+    margin-bottom: 180px;
+}
+
+.materials__title{
+    max-width: 750px;
+    margin-bottom: 60px;
+}
+
+.materials__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 350px 350px 350px;
+    grid-auto-rows: 350px;
+    grid-gap: 20px;
+}
+
+.materials__grid-item-3{
+    grid-column: 3/5;
+}
+
+.materials__grid-item-4{
+    grid-column: 1/3;
+}
+
+.materials__grid-item-5{
+    grid-column: 3/5;
+}
+
+.materials__grid-item-7{
+    grid-column: 2/4;
+}
+
+.materials__grid-item{
+    position: relative;
+    cursor: pointer;
+}
+
+.materials__grid-item:hover > .materials__grid-btn{
+    background-color: var(--accent);
+    color: #fff;
+}
+
+.materials__grid-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.materials__grid-btn{
+    position: absolute;
+    bottom: -1px;
+    left: -1px;
+    background-color: #fff;
+    color: var(--accent);
+    min-width: 225px;
+    padding: 20px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: all 0.2s;
+}
+
+@media (max-width: 1000px) {
+    .materials__grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .materials__grid-item-3{
+        grid-column: 1/2;
+    }
+    
+    .materials__grid-item-4{
+        grid-column: 2/3;
+    }
+    
+    .materials__grid-item-5{
+        grid-column: 1/2;
+    }
+    
+    .materials__grid-item-7{
+        grid-column: 1/2;
+    }
+}
+
+@media (max-width: 1000px) {
+    .materials__grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .materials__grid-item-3{
+        grid-column: 1/2;
+    }
+    
+    .materials__grid-item-4{
+        grid-column: 2/3;
+    }
+    
+    .materials__grid-item-5{
+        grid-column: 1/2;
+    }
+    
+    .materials__grid-item-7{
+        grid-column: 1/2;
+    }
+
+    .materials__grid-btn{
+        font-size: 18px;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .materials__grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 260px;
+        grid-auto-rows: 260px;
+    }
+
+    .materials__grid-item-3{
+        grid-column: 1/2;
+    }
+    
+    .materials__grid-item-4{
+        grid-column: 1/2;
+    }
+    
+    .materials__grid-item-5{
+        grid-column: 1/2;
+    }
+    
+    .materials__grid-item-7{
+        grid-column: 1/2;
+    }
+
+    .materials__grid-btn{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 360px) {
+    .materials__grid{
+        grid-template-rows: 240px;
+        grid-auto-rows: 240px;
+    }
+
+    .materials__grid-btn{
+        font-size: 16px;
+        padding: 10px;
+    }
+}

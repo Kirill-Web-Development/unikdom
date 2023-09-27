@@ -15,3 +15,6 @@
 @import './elements/grid/rewiew-block-grid.css';
 @import './sections/services.css';
 @import './sections/about.css';
+@import './sections/materials.css';
+@import './sections/guarantees.css';
+@import './sections/stages.css';
