@@ -1,11 +1,13 @@
-body, html{
-    overflow-x: hidden;
-}
-
 body {
     position: relative;
 }
 
 .header{
     position: relative;
+}
+
+@media (max-width: 1000px) {
+    body, html {
+        overflow-x: hidden;
+    }
 }
