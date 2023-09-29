@@ -1,5 +1,5 @@
-function setFullHeight() {
-    const elements = document.querySelectorAll('.h-100'); // Выберите нужные элементы
+function setFullHeight(selector) {
+    const elements = document.querySelectorAll(selector); // Выберите нужные элементы
   
     elements.forEach((element) => {
       const vh = window.innerHeight * 0.01; // 1% высоты окна браузера
@@ -8,11 +8,25 @@ function setFullHeight() {
   
       element.style.height = `${height}px`; // Устанавливаем высоту элемента
     });
+
+    const windowWidth = getWidthOfWindow();
+    const bottomMenu = document.querySelector('.bottom-menu')
+    if (windowWidth <=1000) {
+      bottomMenu.classList.add(selector)
+    } else {
+      bottomMenu.classList.remove(selector)
+  
+  }
   }
   
   // Вызываем функцию при загрузке страницы и при изменении размера окна
-  window.addEventListener('resize', setFullHeight);
-  window.addEventListener('load', setFullHeight);
+  window.addEventListener('resize', () => setFullHeight('h-100'));
+  window.addEventListener('load', () => setFullHeight('h-100'));
   
   // Применяем вычисленное значение в CSS
-  setFullHeight();
+  setFullHeight('h-100');
+
+function getWidthOfWindow() {
+  const windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  return windowWidth
+}

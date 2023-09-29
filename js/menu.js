@@ -1,5 +1,6 @@
 const menuLinks = document.querySelectorAll('.navigation-list li');
 const menuLinksArray = Array.from(menuLinks)
+const bottomMenu = document.querySelector('.bottom-menu')
 
 function findLink(item) {
     const parent = item.closest('li');
@@ -29,7 +30,16 @@ document.addEventListener('click', (e) => {
     if (!menuLinksArray.includes(target)) {
         const allSubMenu = document.querySelectorAll('.navigation-list ul:not(:first-child)')
         allSubMenu.forEach(list => list.style.display = 'none')
-        console.log(allSubMenu)
     }
-    console.log(target)
+
+    if(e.target.id === 'nav-icon3') {
+        e.target.classList.toggle('open')
+        bottomMenu.classList.toggle('active')
+    }
+    if (e.target.classList.contains('burger-line')) {
+        const target = e.target.closest('#nav-icon3')
+        target.classList.toggle('open')
+        bottomMenu.classList.toggle('active')
+    }
+
 })

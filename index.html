@@ -30,7 +30,13 @@
                             <a href="" class="socials__link"><img src="./ui-icons/socials/whatsapp.svg" alt=""></a>
                         </div>
                         <button class="upper-menu__callback-order-btn callback-order-btn btn btn--empty">Заказать обратный звонок</button>
-                        <img  class="burger upper-menu__burger" src="./ui-icons/nav/burger.svg" alt="menu">
+                        <!-- <img  class="burger upper-menu__burger" src="./ui-icons/nav/burger.svg" alt="menu"> -->
+                        <div id="nav-icon3" class="upper-menu__burger">
+                            <span class="burger-line"></span>
+                            <span class="burger-line"></span>
+                            <span class="burger-line"></span>
+                            <span class="burger-line"></span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -106,9 +112,16 @@
                                 </li>
                             </ul>
                         </nav>
-                        <div class="search">
+                        <div class="search bottom-menu__search">
                             <input class="search__input" type="text">
                             <button class="search__btn"></button>
+                        </div>
+                        <div class="bottom-menu__contacts">
+                            <a class="mail bottom-menu__mail" href="mailto:unikdom@mail.ru">unikdom@mail.ru</a>
+                            <div class="socials bottom-menu__socials">
+                                <a href="" class="socials__link"><img src="./ui-icons/socials/tg.svg" alt=""></a>
+                                <a href="" class="socials__link"><img src="./ui-icons/socials/whatsapp.svg" alt=""></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -132,27 +145,27 @@
         </section>
         <section class="services">
             <div class="container">
-                <div class="services__title-block">
+                <div class="services__title-block title-block-with-link">
                     <h2 class="services__title">Основные услуги</h2>
                     <div class="btn btn-link" href="#">
                         <div class="btn-link__text">Все услуги</div>
                         <img class="btn-link__img" src="./ui-icons/blue-arrow-right.svg" alt="перейти">
                     </div>
                 </div>
-                <div class="services-grid">
-                    <div class="image-block-grid-block services-grid__block">
+                <div class="default-grid">
+                    <div class="image-block-grid-block default-grid__block">
                         <img src="./images/services/services-1.jpg" alt="Монтаж кровли (новое строительство)">
                         <a class="btn btn--large" href="#"><h5>Монтаж кровли (новое строительство)</h5></a>
                     </div>
-                    <div class="image-block-grid-block services-grid__block">
+                    <div class="image-block-grid-block default-grid__block">
                         <img src="./images/services/services-2.jpg" alt="Реконструкция и капремонт кровли">
                         <a class="btn btn--large" href="#"><h5>Реконструкция и капремонт кровли</h5></a>
                     </div>
-                    <div class="image-block-grid-block services-grid__block">
+                    <div class="image-block-grid-block default-grid__block">
                         <img src="./images/services/services-3.jpg" alt="Ремонт кровли">
                         <a class="btn btn--large" href="#"><h5>Ремонт кровли</h5></a>
                     </div>
-                    <div class="rewiew-block-grid rewiew-block-grid--default services-grid__block">
+                    <div class="rewiew-block-grid default-grid__block">
                         <div class="rewiew--block-grid__content">
                             <div class="rewiew--block-grid__header">
                                 <h5>Монтируем кровли с 2007 года</h5>
@@ -307,8 +320,117 @@
                             <div class="stages__offer-text text text--bold">
                                 (мы являемся официальным партнёром производителей кровли)
                             </div>
-                            <button class="btn">Оставить заявку</button>
+                            <button class="stages__offer-btn btn">Оставить заявку</button>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="container">
+                <div class="reviews__title-block title-block-with-link">
+                    <h2 class="reviews__title">Отзывы клиентов</h2>
+                    <div class="btn btn-link" href="#">
+                        <div class="btn-link__text">Все отзывы</div>
+                        <img class="btn-link__img" src="./ui-icons/blue-arrow-right.svg" alt="перейти">
+                    </div>
+                </div>
+                <div class="default-grid">
+                    <div class="rewiew-block-grid default-grid__block">
+                        <div class="rewiew--block-grid__content">
+                            <div class="rewiew--block-grid__header">
+                                <h5>Монтируем кровли с 2007 года</h5>
+                                <div class="stars">
+                                    <img src="./ui-icons/star.svg" alt="star">
+                                    <img src="./ui-icons/star.svg" alt="star">
+                                    <img src="./ui-icons/star.svg" alt="star">
+                                    <img src="./ui-icons/star.svg" alt="star">
+                                    <img src="./ui-icons/star.svg" alt="star">
+                                </div>
+                            </div>
+                            <div class="rewiew--block-grid__text">
+                                <p class="text">
+                                    Монтаж кровли — это основное направление компании. Обращаясь к нам, вы найдёте надёжного исполнителя для решения таких задач как устройство стропил, кровельного покрытия, водостоков, сайдинга и цокольных панелей. Гарантия качества!
+                                </p>
+                            </div>
+                            <div class="rewiew--block-grid__date">25.08.20</div>
+                        </div>
+                        <a class="rewiew-block-grid__link btn btn-link" href="#">
+                            <div class="btn-link__text">Читать полностью</div>
+                            <img class="btn-link__img" src="./ui-icons/blue-arrow-right.svg" alt="перейти">
+                        </a>
+                    </div>
+                    <div class="rewiew-block-grid default-grid__block">
+                        <div class="rewiew--block-grid__content">
+                            <div class="rewiew--block-grid__header">
+                                <h5>Монтируем кровли с 2007 года</h5>
+                                <div class="stars">
+                                    <img src="./ui-icons/star.svg" alt="star">
+                                    <img src="./ui-icons/star.svg" alt="star">
+                                    <img src="./ui-icons/star.svg" alt="star">
+                                    <img src="./ui-icons/star.svg" alt="star">
+                                    <img src="./ui-icons/star.svg" alt="star">
+                                </div>
+                            </div>
+                            <div class="rewiew--block-grid__text">
+                                <p class="text">
+                                    Монтаж кровли — это основное направление компании. Обращаясь к нам, вы найдёте надёжного исполнителя для решения таких задач как устройство стропил, кровельного покрытия, водостоков, сайдинга и цокольных панелей. Гарантия качества!
+                                </p>
+                            </div>
+                            <div class="rewiew--block-grid__date">25.08.20</div>
+                        </div>
+                        <a class="rewiew-block-grid__link btn btn-link" href="#">
+                            <div class="btn-link__text">Читать полностью</div>
+                            <img class="btn-link__img" src="./ui-icons/blue-arrow-right.svg" alt="перейти">
+                        </a>
+                    </div>
+                    <div class="rewiew-block-grid default-grid__block">
+                        <div class="rewiew--block-grid__content">
+                            <div class="rewiew--block-grid__header">
+                                <h5>Монтируем кровли с 2007 года</h5>
+                                <div class="stars">
+                                    <img src="./ui-icons/star.svg" alt="star">
+                                    <img src="./ui-icons/star.svg" alt="star">
+                                    <img src="./ui-icons/star.svg" alt="star">
+                                    <img src="./ui-icons/star.svg" alt="star">
+                                    <img src="./ui-icons/star.svg" alt="star">
+                                </div>
+                            </div>
+                            <div class="rewiew--block-grid__text">
+                                <p class="text">
+                                    Монтаж кровли — это основное направление компании. Обращаясь к нам, вы найдёте надёжного исполнителя для решения таких задач как устройство стропил, кровельного покрытия, водостоков, сайдинга и цокольных панелей. Гарантия качества!
+                                </p>
+                            </div>
+                            <div class="rewiew--block-grid__date">25.08.20</div>
+                        </div>
+                        <a class="rewiew-block-grid__link btn btn-link" href="#">
+                            <div class="btn-link__text">Читать полностью</div>
+                            <img class="btn-link__img" src="./ui-icons/blue-arrow-right.svg" alt="перейти">
+                        </a>
+                    </div>
+                    <div class="rewiew-block-grid default-grid__block">
+                        <div class="rewiew--block-grid__content">
+                            <div class="rewiew--block-grid__header">
+                                <h5>Монтируем кровли с 2007 года</h5>
+                                <div class="stars">
+                                    <img src="./ui-icons/star.svg" alt="star">
+                                    <img src="./ui-icons/star.svg" alt="star">
+                                    <img src="./ui-icons/star.svg" alt="star">
+                                    <img src="./ui-icons/star.svg" alt="star">
+                                    <img src="./ui-icons/star.svg" alt="star">
+                                </div>
+                            </div>
+                            <div class="rewiew--block-grid__text">
+                                <p class="text">
+                                    Монтаж кровли — это основное направление компании. Обращаясь к нам, вы найдёте надёжного исполнителя для решения таких задач как устройство стропил, кровельного покрытия, водостоков, сайдинга и цокольных панелей. Гарантия качества!
+                                </p>
+                            </div>
+                            <div class="rewiew--block-grid__date">25.08.20</div>
+                        </div>
+                        <a class="rewiew-block-grid__link btn btn-link" href="#">
+                            <div class="btn-link__text">Читать полностью</div>
+                            <img class="btn-link__img" src="./ui-icons/blue-arrow-right.svg" alt="перейти">
+                        </a>
                     </div>
                 </div>
             </div>

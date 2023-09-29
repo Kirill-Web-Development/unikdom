@@ -7,6 +7,7 @@
 @import './elements/buttons.css';
 @import './elements/socials.css';
 @import './elements/search.css';
+@import './elements/burger.css';
 @import './common/header/sale-offer.css';
 @import './common/header/upper-menu.css';
 @import './common/header/bottom-menu.css';
@@ -18,3 +19,4 @@
 @import './sections/materials.css';
 @import './sections/guarantees.css';
 @import './sections/stages.css';
+@import './elements/stars.css';

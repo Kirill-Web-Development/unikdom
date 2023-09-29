@@ -6,8 +6,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     margin-bottom: 60px;
 }
+
 
 .main-offer__title{
     margin-bottom: 40px;
@@ -35,8 +37,10 @@
     background: url('../../ui-icons/blue-checked-icon.svg') center center no-repeat
 }
 
-.main__offer-btns button:not(:last-child) {
-    margin-right: 20px;
+.main__offer-btns{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .main-offer__image{
@@ -46,3 +50,26 @@
     object-fit: cover;
     margin: 0 auto;
 }
+
+@media (max-width: 1200px) {
+    .main-offer__elements{
+        flex-direction: column;
+        align-items: start;
+        row-gap: 50px;
+    }
+    .main-offer__list{
+        margin-left: 45px;
+        order: 0;
+    }
+
+    .main__offer-btns{
+        order: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    .main__offer-btns .btn{
+        width: 100%;
+    }
+}
+

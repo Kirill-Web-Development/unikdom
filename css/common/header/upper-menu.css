@@ -2,7 +2,7 @@
     padding-top: 70px;
     padding-bottom: 30px;
     color: var(--dark-bg);
-    background: var(--light-bg);
+    background: var(--lightest-neutral);
 }
 
 .upper-menu__inner {
@@ -101,6 +101,11 @@
 }
 
 @media (max-width: 1000px) {
+    .upper-menu{
+        padding-top: 60px;
+        padding-bottom: 20px;
+        margin-bottom: 80px;
+    }
     .upper-menu__inner {
         align-items: center;
         padding: 0px 20px;
@@ -167,5 +172,11 @@
 
     .upper-menu__burger{
         order: 3;
+    }
+}
+
+@media (max-width: 480px) {
+    .upper-menu{
+        margin-bottom: 60px;
     }
 }

@@ -1,0 +1,10 @@
+.stars{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+}
+
+.stars > img {
+    width: 20px;
+    height: 19px;
+}
