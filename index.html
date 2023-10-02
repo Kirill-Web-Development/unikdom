@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unikdom</title>
     <link rel="stylesheet" href="./css/main.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=704f6c3c-457c-4df8-8067-73c97d8238ec&lang=ru_RU" type="text/javascript"></script>
 </head>
 <body>
     <header class="header">
@@ -26,11 +27,13 @@
                         </div>
                         <a class="logo upper-menu__logo" href="#"><img src="./images/logo.svg" alt="Уникдом"></a>
                         <div class="socials upper-menu__socials">
-                            <a href="" class="socials__link"><img src="./ui-icons/socials/tg.svg" alt=""></a>
-                            <a href="" class="socials__link"><img src="./ui-icons/socials/whatsapp.svg" alt=""></a>
+                            <a href="#" class="socials__link"><img src="./ui-icons/socials/tg.svg" alt="telegramm"></a>
+                            <a href="#" class="socials__link"><img src="./ui-icons/socials/whatsapp.svg" alt="watsapp"></a>
                         </div>
                         <button class="upper-menu__callback-order-btn callback-order-btn btn btn--empty">Заказать обратный звонок</button>
-                        <!-- <img  class="burger upper-menu__burger" src="./ui-icons/nav/burger.svg" alt="menu"> -->
+                        <button class="btn-mobile-phone upper-menu__btn-mobile-phone">
+                            <img src="./ui-icons/phone.svg" alt="">
+                        </button>
                         <div id="nav-icon3" class="upper-menu__burger">
                             <span class="burger-line"></span>
                             <span class="burger-line"></span>
@@ -115,6 +118,10 @@
                         <div class="search bottom-menu__search">
                             <input class="search__input" type="text">
                             <button class="search__btn"></button>
+                        </div>
+                        <div class="phone-and-hours bottom-menu__phone-and-hours">
+                            <a class="phone" href="tel:+74994080038">+7 499 408-00-38</a>
+                            <div class="working-hours">Ежедневно с 09:00 до 20:00</div>
                         </div>
                         <div class="bottom-menu__contacts">
                             <a class="mail bottom-menu__mail" href="mailto:unikdom@mail.ru">unikdom@mail.ru</a>
@@ -435,9 +442,83 @@
                 </div>
             </div>
         </section>
+        <section class="map">
+            <img class="map__upper-img" src="./images/map-upper-img.png" alt="">
+            <div id="map" class="ymaps-layers-pane"></div>
+            <div class="map-wrapper"></div>
+            <div class="map__content">
+                <div class="map__container">
+                    <div class="map__offer">
+                        <h2 class="map__title">Связаться с нами</h2>
+                        <p class="map__text text text--bold">Получите первичную консультацию или пригласите инженера-строителя на объект.</p>
+                        <div class="map__offer-subtext">Мы вам перезвоним в течение 30 минут!</div>
+                    </div>
+                    <form class="map__form">
+                        <h4 class="map__form-title">Форма обратной связи</h4>
+                        <input class="map__form-input" name="name" type="text" placeholder="Ваше имя">
+                        <input class="map__form-input" name="email" type="email" placeholder="Ваша электронная почта">
+                        <input class="map__form-input" name="phone" type="tel" placeholder="Ваш номер телефона">
+                        <button class="btn map__form-btn">Отправить</button>
+                        <p class="map__form-info">Нажимая на кнопку, вы соглашаетесь с<br><a href="#">Политикой конфиденциальности</a></p>
+                    </form>
+                </div>
+            </div>
+            <div class="map__contacts">
+                <a href="#" class="map__mail">unikdom@mail.ru</a>
+                <a href="tel:+74994080038" class="map__phone">+7 499 408-00-38</a>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="upper-footer">
+                    <div class="upper-footer__column first-column">
+                        <a class="logo upper-footer__logo" href="#"><img src="./images/logo.svg" alt="Уникдом"></a>
+                        <p>Занимаемся кровельными <br> работами, монтажем сайдинга и водосточными системами более 10 лет. Ценим свою репутацию и уважаем наших клиентов.</p>
+                        <div>© 2023 Unikdom.ru</div>
+                    </div>
+                    <nav class="footer-navigation">
+                        <ul class="upper-footer__column second-column">
+                                <li><a href="#" class="upper-footer__link">Услуги</a></li>
+                                <li><a href="#" class="upper-footer__link">Наши работы</a></li>
+                                <li><a href="#" class="upper-footer__link">Цены</a></li>
+                                <li><a href="#" class="upper-footer__link">О компании</a></li>
+                                <li><a href="#" class="upper-footer__link">Контакты</a></li>
+                        </ul>
+                        <ul class="upper-footer__column third-column">
+                            <li><a href="#" class="upper-footer__link">Монтаж кровли</a></li>
+                            <li><a href="#" class="upper-footer__link">Ремонт кровли</a></li>
+                            <li><a href="#" class="upper-footer__link">Капремонт и реконструкция кровли</a></li>
+                            <li><a href="#" class="upper-footer__link">Водостоки</a></li>
+                            <li><a href="#" class="upper-footer__link">Фасадные работы</a></li>
+                            <li><a href="#" class="upper-footer__link">Блок хаус</a></li>
+                        </ul>
+                    </nav>
+                    <div class="upper-footer__column fourth-column">
+                        <div>
+                            <div class="socials upper-footer__socials">
+                                <a href="#" class="socials__link"><img src="./ui-icons/socials/youtube.svg" alt="youtube"></a>
+                                <a href="#" class="socials__link"><img src="./ui-icons/socials/tg.svg" alt="telegramm"></a>
+                                <a href="#" class="socials__link"><img src="./ui-icons/socials/whatsapp.svg" alt="watsapp"></a>
+                            </div>
+                            <div>Люблинская ул, дом 40, г. Москва</div>
+                        </div>
+                        <div>
+                            <button class="btn callback-order-btn btn--empty upper-footer__btn">Заказать обратный звонок</button>
+                            <div class="search upper-footer__search">
+                                <input class="search__input search__input--light" type="text">
+                                <button class="search__btn"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-footer"></div>
+            </div>
+        </footer>
     </main>
 
     <script src="./js/menu.js"></script>
     <script src="./js/setFullHeight.js"></script>
+    <script src="./js/media.js"></script>
+    <script src="./js/map.js"></script>
 </body>
 </html>

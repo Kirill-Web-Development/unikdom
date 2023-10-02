@@ -1,5 +1,6 @@
 body {
     position: relative;
+    background: var(--light-bg);
 }
 
 .header{

@@ -123,8 +123,14 @@
 }
 
 @media (max-width: 768px) {
-    .btn.btn--large {  
-        width: 360px;
+    .btn.callback-order-btn {  
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 540px) {
+    .upper-menu__callback-order-btn{
+        font-size: 14px;
     }
 }
 

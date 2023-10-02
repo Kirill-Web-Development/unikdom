@@ -17,6 +17,11 @@
     color: var(--darkest-neutral);
 }
 
+.search__input--light{
+    border-bottom: 2px solid var(--neutral);
+    color: var(--neutral);
+}
+
 
 .search__btn{
     position: absolute;

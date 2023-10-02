@@ -1,0 +1,13 @@
+.btn-mobile-phone{
+    display: none;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--accent);
+}
+
+@media (max-width: 400px) {
+    .btn-mobile-phone{
+        display: flex;
+    }
+}

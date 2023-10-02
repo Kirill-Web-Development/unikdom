@@ -136,12 +136,17 @@
     display: none;
 }
 
+.bottom-menu__phone-and-hours{
+    display: none;
+    text-align: center;
+}
+
 
 /* ======================MEDIA================== */
 
 @media (max-width: 1000px) {
     .bottom-menu{
-        height: 100vh;
+        height: 85vh;
         width: 372px;
         padding: 50px 0px;
         position: absolute;
@@ -206,5 +211,11 @@
     .bottom-menu__socials{
         display: flex;
         gap: 20px;
+    }
+}
+
+@media (max-width: 742px) {
+    .bottom-menu__phone-and-hours{
+        display: block;
     }
 }

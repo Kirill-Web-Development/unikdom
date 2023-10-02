@@ -8,6 +8,7 @@
 @import './elements/socials.css';
 @import './elements/search.css';
 @import './elements/burger.css';
+@import './elements/btn-mobile-phone.css';
 @import './common/header/sale-offer.css';
 @import './common/header/upper-menu.css';
 @import './common/header/bottom-menu.css';
@@ -20,3 +21,6 @@
 @import './sections/guarantees.css';
 @import './sections/stages.css';
 @import './elements/stars.css';
+@import './sections/reviews.css';
+@import './sections/map.css';
+@import './common/footer/upper__footer.css';
