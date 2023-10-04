@@ -11,4 +11,10 @@ body {
     body, html {
         overflow-x: hidden;
     }
+
+    .header{
+        position: fixed;
+        width: 100%;
+        z-index: 20;
+    }
 }

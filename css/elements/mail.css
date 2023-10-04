@@ -1,0 +1,9 @@
+.mail:hover{
+    color: var(--accent)
+}
+.mail{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

@@ -1,5 +1,3 @@
-
-
 function setMediaText(mediaWidth, elementSelector, mediaText, initialText) {
     const   windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
     element = document.querySelector(elementSelector);

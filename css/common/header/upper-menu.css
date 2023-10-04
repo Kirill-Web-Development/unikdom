@@ -36,12 +36,6 @@
     margin-right: 60px;
 }
 
-.mail{
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
 
 .phone{
     font-size: 20px;
@@ -98,7 +92,6 @@
     .upper-menu{
         padding-top: 60px;
         padding-bottom: 20px;
-        margin-bottom: 80px;
     }
     .upper-menu__inner {
         align-items: center;
@@ -175,11 +168,6 @@
         margin-right: 10%;
     }
 }
-@media (max-width: 480px) {
-    .upper-menu{
-        margin-bottom: 60px;
-    }
-}
 
 @media (max-width: 540px) {
     .upper-menu__callback-order-btn{
@@ -189,10 +177,6 @@
 }
 
 @media (max-width: 480px) {
-    .upper-menu{
-        margin-bottom: 60px;
-    }
-
     .upper-menu__logo{
         width: 94px;
         height: 30px;

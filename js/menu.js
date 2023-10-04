@@ -1,35 +1,20 @@
 const menuLinks = document.querySelectorAll('.navigation-list li');
+const menuLinksFirstLvl = document.querySelectorAll('.navigation-list > li')
 const menuLinksArray = Array.from(menuLinks)
+const menuLinksFirstLvlArray = Array.from(menuLinksFirstLvl)
 const bottomMenu = document.querySelector('.bottom-menu')
 
 function findLink(item) {
-    const parent = item.closest('li');
+    const parent = item.closest('li') || item;
     return parent;
 }
 
-menuLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-        const target = e.target.tagName === 'LI' ? e.target : findLink(e.target)
-        const subMenu = target.querySelector('ul');
-        const targetParent = e.target.closest('ul')
-        const sameLevelLinks = targetParent.querySelectorAll(':scope > li')
-        sameLevelLinks.forEach(link => {
-            const subMenu = link.querySelector('ul');
-            if (subMenu) {
-                subMenu.style.display = 'none'
-            }
-        })
-        if (subMenu) {
-            subMenu.style.display = 'block'
-        }
-    })
-})
 
 document.addEventListener('click', (e) => {
     const target = e.target.tagName === 'LI' ? e.target : findLink(e.target)
     if (!menuLinksArray.includes(target)) {
-        const allSubMenu = document.querySelectorAll('.navigation-list ul:not(:first-child)')
-        allSubMenu.forEach(list => list.style.display = 'none')
+        const allSubMenu = document.querySelectorAll('.submenu-active')
+        allSubMenu.forEach(list => list.classList.toggle('submenu-active'))
     }
 
     if(e.target.id === 'nav-icon3') {
@@ -41,5 +26,16 @@ document.addEventListener('click', (e) => {
         target.classList.toggle('open')
         bottomMenu.classList.toggle('active')
     }
+})
 
+menuLinks.forEach((link) => {
+    link.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const sub = link.querySelectorAll('.submenu-active ul li.submenu-active');
+        if (sub.length) {
+            sub.forEach(link => link.classList.toggle('submenu-active'))
+        }
+        const target = e.target.tagName === 'LI' ? e.target : findLink(e.target)
+        target.classList.toggle('submenu-active')
+    })
 })
