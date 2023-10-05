@@ -17,4 +17,8 @@ body {
         width: 100%;
         z-index: 20;
     }
+
+    main {
+        padding-top: 200px;
+    }
 }
