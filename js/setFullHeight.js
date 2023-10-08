@@ -1,6 +1,5 @@
 function setFullHeight() {
     const elements = document.querySelectorAll('.h-100'); // Выберите нужные элементы
-    console.log(elements)
     elements.forEach((element) => {
       const vh = window.innerHeight * 0.01; // 1% высоты окна браузера
       const offset = window.visualViewport.offsetTop; // Высота адресной строки браузера

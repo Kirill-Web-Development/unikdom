@@ -73,7 +73,6 @@
 
 .map__form{
     width: 530px;
-    background: var(--light-bg);
 }
 
 .map__title{
@@ -84,7 +83,7 @@
     margin-bottom: 30px;
 }
 
-.map__form{
+/* .map__form{
     padding: 50px;
 }
 
@@ -100,9 +99,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-}
+} */
 
-.map__form-title{
+/* .map__form-title{
     color: var(--accent);
     text-align: center;
     margin-bottom: 50px;
@@ -110,9 +109,9 @@
 
 .map__form-info a{
     color: var(--accent);
-}
+} */
 
-.map__form-input{
+/* .map__form-input{
     padding: 14px 20px 14px 0px;
     border-bottom: 2px solid var(--neutral);
     color: var(--neutral);
@@ -126,31 +125,7 @@
 
 .map__form-input:last-of-type{
     margin-bottom: 50px;
-}
-
-/* Современные браузеры
-   ----------------------------  */
-   .map__form-input::placeholder {color: var(--neutral);}
-
-   /* WebKit, Edge
-      ----------------------------  */
-   .map__form-input::-webkit-input-placeholder {color: var(--neutral);}
-   
-   /* Edge
-      ----------------------------  */
-    .map__form-input::-ms-input-placeholder {color: var(--neutral);}
-   
-   /* Firefox 4-18
-      ----------------------------  */
-    .map__form-input:-moz-placeholder {color: var(--neutral);opacity: 1;}
-   
-   /* Firefox 19+
-      ----------------------------  */
-    .map__form-input::-moz-placeholder {color: var(--neutral);opacity: 1;}
-   
-   /* IE 10-11
-      ----------------------------  */
-   .map__form-input:-ms-input-placeholder {color: var(--neutral);}
+} */
 
 
 .map__contacts{

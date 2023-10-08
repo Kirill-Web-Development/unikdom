@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unikdom</title>
+    <!-- <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    /> -->
+    <link rel="stylesheet" href="./css/vendors/swiper.css">
     <link rel="stylesheet" href="./css/main.css">
     <script src="https://api-maps.yandex.ru/2.1/?apikey=704f6c3c-457c-4df8-8067-73c97d8238ec&lang=ru_RU" type="text/javascript"></script>
 </head>
@@ -30,7 +35,7 @@
                             <a href="#" class="socials__link"><img src="./ui-icons/socials/tg.svg" alt="telegramm"></a>
                             <a href="#" class="socials__link"><img src="./ui-icons/socials/whatsapp.svg" alt="watsapp"></a>
                         </div>
-                        <button class="upper-menu__callback-order-btn callback-order-btn btn btn--empty">Заказать обратный звонок</button>
+                        <button class="upper-menu__callback-order-btn callback-order-btn btn btn--empty" data-modal>Заказать обратный звонок</button>
                         <button class="btn-mobile-phone upper-menu__btn-mobile-phone">
                             <img src="./ui-icons/phone.svg" alt="">
                         </button>
@@ -48,35 +53,70 @@
                     <div class="bottom-menu__inner">
                         <nav class="navigation">
                             <ul class="navigation-list first-level-menu">
-                                <li><a href="#">
+                                <li data-dropdown><a href="#">
                                         <span>Услуги</span>
                                     </a>
                                     <ul class="second-level-menu">
-                                        <li><a href="#">
-                                            <span>Услуги 2</span>
-                                            <!-- <ul class="second-level-menu">
-                                                <li>
-                                                    <span>услуги 3</span>
-                                                </li>
-                                            </ul> -->
+                                        <li data-dropdown><a href="#">
+                                            <span>Монтаж кровли</span>
                                             </a>
-                                        </li>
-                                        <li>
-                                            <span>Капитальный ремонт и реконструкция кровли</span>
                                             <ul class="third-level-menu">
                                                 <li>
                                                     <a href="#">
-                                                        <span>услуги 3</span>
+                                                        <span>Монтаж гибкой кровли</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Монтаж гибкой кровли</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Монтаж натуральной черпицы</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Монтаж медной кровли</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Монтаж фальцевой кровли</span>
                                                     </a>
                                                 </li>
                                             </ul>
+                                            </a>
                                         </li>
                                         <li>
-                                            <span>Услуги 2</span>
+                                            <a href="#">
+                                                <span>Ремонт кровли</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span>Капитальный ремонт и реконструкция кровли</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span>Монтаж и ремонт водостоков</span>
+                                            </a>
+                                        </li>
+                                        <li data-dropdown>
+                                            <a href="#">
+                                                <span>Фасадные работы</span>
+                                            </a>
                                             <ul class="third-level-menu">
                                                 <li>
                                                     <a href="#">
-                                                        <span>услуги 3</span>
+                                                        <span>Монтаж сайдинга</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Монтаж цокольных панелей</span>
                                                     </a>
                                                 </li>
                                             </ul>
@@ -87,40 +127,8 @@
                                     <a href="#">
                                         <span>Наши работы</span>
                                     </a>
-                                    <ul class="second-level-menu">
-                                        <li>
-                                            <a href="#">
-                                                <span>Услуги 2</span>
-                                            </a>
-                                            <!-- <ul class="second-level-menu">
-                                                <li>
-                                                    <span>услуги 3</span>
-                                                </li>
-                                            </ul> -->
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <span>Услуги 2</span>
-                                            </a>
-                                            <!-- <ul class="second-level-menu">
-                                                <li>
-                                                    <span>услуги 3</span>
-                                                </li>
-                                            </ul> -->
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <span>Услуги 2</span>
-                                            </a>
-                                            <!-- <ul class="second-level-menu">
-                                                <li>
-                                                    <span>услуги 3</span>
-                                                </li>
-                                            </ul> -->
-                                        </li>
-                                    </ul>
                                 </li>
-                                <li>
+                                <li data-dropdown>
                                     <a href="#">
                                         <span>Цены</span>
                                     </a>
@@ -304,21 +312,31 @@
             </div>
         </section>
         <section class="certificates">
-                <div id="certificates-slider" class="slider">
-                    <div class="slider__navigation">
-                        <div class="button-next"></div>
-                        <div class="pag"><span class="curr">1</span>/<span class="all">9</span></div>
-                        <div class="button-prev"></div>
+            <div class="certificates__inner">
+                <div class="certificates__container">
+                <!-- Slider main container -->
+                    <h2 class="certificates__title">Наши дипломы и сертификаты</h2>
+                    <div class="certificates__pagination swiper-pagination"></div>
+                    <div class="swiper-navigation">
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"><img src="./ui-icons/slider/arrow.svg" alt="prev"></div>
+                        <div class="swiper-button-next"><img src="./ui-icons/slider/arrow.svg" alt="next"></div>
                     </div>
-                    <div class="slider-wrapper">
-                        <div class="slide"><img src="./images/slider/certificate-1.jpg" alt=""></div>
-                        <div class="slide"><img src="./images/slider/certificate-2.jpg" alt=""></div>
-                        <div class="slide"><img src="./images/slider/certificate-3.jpg" alt=""></div>
-                        <div class="slide"><img src="./images/slider/certificate-4.jpg" alt=""></div>
+                    <div class="swiper certificates__swiper">
+                        <!-- If we need pagination -->
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                        <!-- Slides -->
+                            <div class="swiper-slide"><img src="./images/slider/certificate-1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/slider/certificate-2.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/slider/certificate-3.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/slider/certificate-4.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/slider/certificate-5.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/slider/certificate-6.jpg" alt=""></div>
+                        </div>
                     </div>
-                    <!-- Добавьте дополнительные слайды по мере необходимости -->
                 </div>
-                <div class="pagination"></div>
+            </div>
         </section>
         <section class="stages">
             <div class="container stages__container">
@@ -492,13 +510,13 @@
                         <p class="map__text text text--bold">Получите первичную консультацию или пригласите инженера-строителя на объект.</p>
                         <div class="map__offer-subtext">Мы вам перезвоним в течение 30 минут!</div>
                     </div>
-                    <form class="map__form">
-                        <h4 class="map__form-title">Форма обратной связи</h4>
-                        <input class="map__form-input" name="name" type="text" placeholder="Ваше имя">
-                        <input class="map__form-input" name="email" type="email" placeholder="Ваша электронная почта">
-                        <input class="map__form-input" name="phone" type="tel" placeholder="Ваш номер телефона">
-                        <button class="btn map__form-btn">Отправить</button>
-                        <p class="map__form-info">Нажимая на кнопку, вы соглашаетесь с<br><a href="#">Политикой конфиденциальности</a></p>
+                    <form class="map__form form">
+                        <h4 class="map__form-title form-title">Форма обратной связи</h4>
+                        <input class="map__form-input form-input" name="name" type="text" placeholder="Ваше имя">
+                        <input class="map__form-input form-input" name="email" type="email" placeholder="Ваша электронная почта">
+                        <input class="map__form-input form-input" name="phone" type="tel" placeholder="Ваш номер телефона">
+                        <button class="btn map__form-btn form-btn">Отправить</button>
+                        <p class="map__form-info form-info">Нажимая на кнопку, вы соглашаетесь с<br><a href="#">Политикой конфиденциальности</a></p>
                     </form>
                 </div>
             </div>
@@ -507,56 +525,79 @@
                 <a href="tel:+74994080038" class="map__phone">+7 499 408-00-38</a>
             </div>
         </section>
-        <footer class="footer">
-            <div class="container">
-                <div class="upper-footer">
-                    <div class="upper-footer__column first-column">
-                        <a class="logo upper-footer__logo" href="#"><img src="./images/logo.svg" alt="Уникдом"></a>
-                        <p>Занимаемся кровельными <br> работами, монтажем сайдинга и водосточными системами более 10 лет. Ценим свою репутацию и уважаем наших клиентов.</p>
-                        <div>© 2023 Unikdom.ru</div>
-                    </div>
-                    <nav class="footer-navigation">
-                        <ul class="upper-footer__column second-column">
-                                <li><a href="#" class="upper-footer__link">Услуги</a></li>
-                                <li><a href="#" class="upper-footer__link">Наши работы</a></li>
-                                <li><a href="#" class="upper-footer__link">Цены</a></li>
-                                <li><a href="#" class="upper-footer__link">О компании</a></li>
-                                <li><a href="#" class="upper-footer__link">Контакты</a></li>
-                        </ul>
-                        <ul class="upper-footer__column third-column">
-                            <li><a href="#" class="upper-footer__link">Монтаж кровли</a></li>
-                            <li><a href="#" class="upper-footer__link">Ремонт кровли</a></li>
-                            <li><a href="#" class="upper-footer__link">Капремонт и реконструкция кровли</a></li>
-                            <li><a href="#" class="upper-footer__link">Водостоки</a></li>
-                            <li><a href="#" class="upper-footer__link">Фасадные работы</a></li>
-                            <li><a href="#" class="upper-footer__link">Блок хаус</a></li>
-                        </ul>
-                    </nav>
-                    <div class="upper-footer__column fourth-column">
-                        <div>
-                            <div class="socials upper-footer__socials">
-                                <a href="#" class="socials__link"><img src="./ui-icons/socials/youtube.svg" alt="youtube"></a>
-                                <a href="#" class="socials__link"><img src="./ui-icons/socials/tg.svg" alt="telegramm"></a>
-                                <a href="#" class="socials__link"><img src="./ui-icons/socials/whatsapp.svg" alt="watsapp"></a>
-                            </div>
-                            <div>Люблинская ул, дом 40, г. Москва</div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="upper-footer">
+                <div class="upper-footer__column first-column">
+                    <a class="logo upper-footer__logo" href="#"><img src="./images/logo.svg" alt="Уникдом"></a>
+                    <p>Занимаемся кровельными <br> работами, монтажем сайдинга и водосточными системами более 10 лет. Ценим свою репутацию и уважаем наших клиентов.</p>
+                    <div>© 2023 Unikdom.ru</div>
+                </div>
+                <nav class="footer-navigation">
+                    <ul class="upper-footer__column second-column">
+                            <li><a href="#" class="upper-footer__link">Услуги</a></li>
+                            <li><a href="#" class="upper-footer__link">Наши работы</a></li>
+                            <li><a href="#" class="upper-footer__link">Цены</a></li>
+                            <li><a href="#" class="upper-footer__link">О компании</a></li>
+                            <li><a href="#" class="upper-footer__link">Контакты</a></li>
+                    </ul>
+                    <ul class="upper-footer__column third-column">
+                        <li><a href="#" class="upper-footer__link">Монтаж кровли</a></li>
+                        <li><a href="#" class="upper-footer__link">Ремонт кровли</a></li>
+                        <li><a href="#" class="upper-footer__link">Капремонт и реконструкция кровли</a></li>
+                        <li><a href="#" class="upper-footer__link">Водостоки</a></li>
+                        <li><a href="#" class="upper-footer__link">Фасадные работы</a></li>
+                        <li><a href="#" class="upper-footer__link">Блок хаус</a></li>
+                    </ul>
+                </nav>
+                <div class="upper-footer__column fourth-column">
+                    <div>
+                        <div class="socials upper-footer__socials">
+                            <a href="#" class="socials__link"><img src="./ui-icons/socials/youtube.svg" alt="youtube"></a>
+                            <a href="#" class="socials__link"><img src="./ui-icons/socials/tg.svg" alt="telegramm"></a>
+                            <a href="#" class="socials__link"><img src="./ui-icons/socials/whatsapp.svg" alt="watsapp"></a>
                         </div>
-                        <div>
-                            <button class="btn callback-order-btn btn--empty upper-footer__btn">Заказать обратный звонок</button>
-                            <div class="search upper-footer__search">
-                                <input class="search__input search__input--light" type="text">
-                                <button class="search__btn"></button>
-                            </div>
+                        <div>Люблинская ул, дом 40, г. Москва</div>
+                    </div>
+                    <div>
+                        <button class="btn callback-order-btn btn--empty upper-footer__btn" data-modal>Заказать обратный звонок</button>
+                        <div class="search upper-footer__search">
+                            <input class="search__input search__input--light" type="text">
+                            <button class="search__btn"></button>
                         </div>
                     </div>
                 </div>
-                <div class="bottom-footer"></div>
             </div>
-        </footer>
-    </main>
+            <div class="bottom-footer"></div>
+        </div>
+    </footer>
+
+    <div id="overlay">
+        <div id="modal-callback" class="modal">
+            <div class="modal-callback__content">
+                <div class="modal-callback__img">
+                    <img src="./images/modal-img.jpg">
+                </div>
+                <form action="" class="form modal-callback__form">
+                    <h4 class="modal-callbac-title form-title">Форма обратной связи</h4>
+                    <input class="modal-callbac-input form-input" name="name" type="text" placeholder="Ваше имя">
+                    <input class="modal-callbac-input form-input" name="email" type="email" placeholder="Ваша электронная почта">
+                    <input class="modal-callbac-input form-input" name="phone" type="tel" placeholder="Ваш номер телефона">
+                    <button class="btn modal-callbac-btn form-btn">Отправить</button>
+                    <p class="modal-callbac-info form-info">Нажимая на кнопку, вы соглашаетесь с<br><a href="#">Политикой конфиденциальности</a></p>
+                </form>
+                <button class="modal__close-btn" data-close-modal><img src="./ui-icons/close.svg" alt=""></button>
+            </div>
+        </div>
+    </div>
     <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
     <script src="./js/setFullHeight.js"></script>
     <script src="./js/media.js"></script>
     <script src="./js/map.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js"></script>
 </body>
 </html>

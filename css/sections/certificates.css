@@ -1,33 +1,237 @@
-.certificates .swiper-slide{
-    height: 560px;
-    width: 420px;
-    object-fit: cover;
+.certificates{
+    color: #fff;
+    background: url('../../ui-icons/slider/bg-image.svg') top left/180px 100% no-repeat, var(--dark-bg);
 }
-.slider{
-    display: flex;
-    gap: 20px;
+
+.certificates__inner{
+    padding: 90px 0;
+}
+.certificates__container{
+    max-width: auto;
     margin-left: 15%;
-}
-
-.slide{
-    width: 420px;
-    height: 560px;
-    object-fit: cover;
-}
-
-.button-prev, .button-next{
-    width: 20px;
-    height: 20px;
     position: relative;
-    z-index: 10;
-    background-color: #000;
+}
+
+.certificates__title{
+    max-width: 440px;
+    margin-bottom: 60px;
+}
+.swiper-slide{
+    width: 420px !important;
+    height: 560px !important;
+    object-fit: cover !important;
+}
+
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+}
+
+.certificates__pagination{
+    background-color: var(--accent);
+    top: 0;
+    left: unset;
+    right: 0;
+    max-height: 80px;
+    width: 500px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(30px);
+}
+
+.certificates .swiper-button-prev{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.certificates .swiper-button-next{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.swiper-button-next img {
+    width: 100%;
+    height: 100%;
+    display: block;
+ }
+
+.swiper-navigation{
+    display: flex;
+    gap: 145px;
+    position: absolute;
+    right: 220px;
+    top: 45px;
+    z-index: 20;
+}
+
+.swiper-pagination-total{
+    margin-right: 190px;
 }
 
 .swiper-button-prev{
-    margin-left: 100px;
+    transform: rotate(180deg);
 }
 
-.slider__navigation{
-    display: flex;
-    gap: 5px;
+.swiper-button-prev img {
+    display: block;
+    width: 100%;
+    height: 100%;
+ }
+
+.swiper-pagination-current{
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-right: 7px;
+}
+
+.swiper-pagination-total{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 4px;
+}
+
+
+
+
+
+/* ======================MEDIA================== */
+@media (max-width: 1000px) {
+    .certificates{
+        background: var(--dark-bg);
+    }
+
+    .certificates__container{
+        margin-left: 0;
+        padding: 0px 0px 0px 20px;
+    }
+
+    .certificates__pagination{
+        width: 300px;
+    }
+
+    .swiper-navigation{
+        right: 35px;
+    }
+
+    .swiper-pagination-total{
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .certificates__title{
+        margin-bottom: 210px;
+        padding-left: 20px;
+    }
+
+    .certificates__container{
+        padding-left: 0;
+    }
+
+    .certificates__pagination{
+        left: 20px;
+        top: 159px;
+
+    }
+
+    .swiper-navigation{
+        left: 40px;
+        top: 205px;
+    }
+}
+
+@media (max-width: 480px) {
+    .certificates__title{
+        margin-bottom: 150px;
+        padding-left: 20px;
+    }
+
+    .swiper-slide{
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .certificates__container{
+       padding: 0 20px;
+    }
+    
+    .certificates__pagination{
+        left: 50%;
+        top: 100px;
+        width: 90%;
+        transform: translateX(-50%);
+    }
+
+    .swiper-navigation{
+        left: 40px;
+        top: 115px;
+        gap: 300px;
+    }
+
+    .swiper-pagination-total{
+        margin-right: 5px;
+    }
+
+    .swiper-pagination-current{
+        font-size: 30px;
+        margin-right: 4.5px;
+    }
+    
+    .swiper-pagination-total{
+        font-size: 18px;
+    }
+    
+    
+}
+
+@media (max-width: 480px) {
+    .swiper-navigation{
+        left: 40px;
+        top: 125px;
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .certificates .swiper-button-prev {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .certificates .swiper-button-next {
+        width: 30px;
+        height: 30px;
+    }
+
+    .certificates .swiper-button-prev img{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .certificates .swiper-button-next img{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 360px) {
+    .certificates__title{
+        margin-bottom: 100px;
+    }
+
+    .certificates__pagination{
+        max-height: 54px;
+    }
+
+    .swiper-navigation{
+        left: 40px;
+        top: 112px;
+    }
 }
