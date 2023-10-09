@@ -16,27 +16,6 @@
     object-fit: cover;
 }
 
-.default-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 54px;
-}
-
-.default-grid__block a {
-    transform: translateY(50%);
-}
-
-.default__block .stars {
-    display: none;
-}
-
-@media (max-width: 768px) {
-    .default-grid{
-        grid-template-columns:1fr;
-    }
-}
-
 @media (max-width: 480px) {
     .title-block-with-link{
         display: flex;

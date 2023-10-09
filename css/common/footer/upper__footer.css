@@ -112,3 +112,16 @@
     }
     
 }
+
+@media (max-width: 400px) {
+    .footer-navigation{
+        flex-wrap: wrap;
+        gap: 60px;
+    }
+
+    .upper-footer__column.second-column {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 48px;
+    }
+}

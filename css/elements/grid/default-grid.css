@@ -1,0 +1,21 @@
+.default-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 54px;
+}
+
+
+.default-grid__block a {
+    transform: translateY(50%);
+}
+
+.grid__block--full-row{
+    grid-column: 1/3;
+}
+
+@media (max-width: 768px) {
+    .default-grid{
+        grid-template-columns:1fr;
+    }
+}

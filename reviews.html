@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы</title>
+    <link rel="stylesheet" href="./css/pages/page-reviews.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="sale-offer">
+            <div class="container sale-offer__container">
+                <div class="sale-offer__inner">
+                    <div class="sale-offer__text text text--white">Оставьте нам заявку и получите скидку на работы 10%</div>
+                    <button class="sale-offer__close-btn close-btn"></button>
+                </div>
+            </div>
+        </a>
+        <div class="upper-menu">
+            <div class="container">
+                <div class="upper-menu__inner">
+                    <a class="mail upper-menu__mail" href="mailto:unikdom@mail.ru">unikdom@mail.ru</a>
+                    <div class="phone-and-hours upper-menu__phone-and-hours">
+                        <a class="phone" href="tel:+74994080038">+7 499 408-00-38</a>
+                        <div class="working-hours">Ежедневно с 09:00 до 20:00</div>
+                    </div>
+                    <a class="logo upper-menu__logo" href="#"><img src="./images/logo.svg" alt="Уникдом"></a>
+                    <div class="socials upper-menu__socials">
+                        <a href="#" class="socials__link"><img src="./ui-icons/socials/tg.svg" alt="telegramm"></a>
+                        <a href="#" class="socials__link"><img src="./ui-icons/socials/whatsapp.svg" alt="watsapp"></a>
+                    </div>
+                    <button class="upper-menu__callback-order-btn callback-order-btn btn btn--empty" data-modal>Заказать обратный звонок</button>
+                    <button class="btn-mobile-phone upper-menu__btn-mobile-phone" data-modal>
+                        <img src="./ui-icons/phone.svg" alt="">
+                    </button>
+                    <div id="nav-icon3" class="upper-menu__burger">
+                        <span class="burger-line"></span>
+                        <span class="burger-line"></span>
+                        <span class="burger-line"></span>
+                        <span class="burger-line"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-menu">
+            <div class="container">
+                <div class="bottom-menu__inner">
+                    <nav class="navigation">
+                        <ul class="navigation-list first-level-menu">
+                            <li data-dropdown><a href="#">
+                                    <span>Услуги</span>
+                                </a>
+                                <ul class="second-level-menu">
+                                    <li data-dropdown><a href="#">
+                                        <span>Монтаж кровли</span>
+                                        </a>
+                                        <ul class="third-level-menu">
+                                            <li>
+                                                <a href="#">
+                                                    <span>Монтаж гибкой кровли</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span>Монтаж гибкой кровли</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span>Монтаж натуральной черпицы</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span>Монтаж медной кровли</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span>Монтаж фальцевой кровли</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>Ремонт кровли</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>Капитальный ремонт и реконструкция кровли</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>Монтаж и ремонт водостоков</span>
+                                        </a>
+                                    </li>
+                                    <li data-dropdown>
+                                        <a href="#">
+                                            <span>Фасадные работы</span>
+                                        </a>
+                                        <ul class="third-level-menu">
+                                            <li>
+                                                <a href="#">
+                                                    <span>Монтаж сайдинга</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span>Монтаж цокольных панелей</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Наши работы</span>
+                                </a>
+                            </li>
+                            <li data-dropdown>
+                                <a href="#">
+                                    <span>Цены</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>О компании</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Контакты</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="search bottom-menu__search">
+                        <input class="search__input" type="text">
+                        <button class="search__btn"></button>
+                    </div>
+                    <div class="phone-and-hours bottom-menu__phone-and-hours">
+                        <a class="phone" href="tel:+74994080038">+7 499 408-00-38</a>
+                        <div class="working-hours">Ежедневно с 09:00 до 20:00</div>
+                    </div>
+                    <div class="bottom-menu__contacts">
+                        <a class="mail bottom-menu__mail" href="mailto:unikdom@mail.ru">unikdom@mail.ru</a>
+                        <div class="socials bottom-menu__socials">
+                            <a href="" class="socials__link"><img src="./ui-icons/socials/tg.svg" alt=""></a>
+                            <a href="" class="socials__link"><img src="./ui-icons/socials/whatsapp.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="reviews-list">
+            <div class="container">
+                <div class="reviews-list__inner reviews-list__grid">
+                    <div class="default-grid">
+                        <div class="default-grid__block grid__block--full-row">
+                            <h2>Отзывы</h2>
+                            <div class="breadcrumb">
+                                <div class="breadcrumb__item prev-page">Главная страница</div>
+                                <div class="breadcrumb__item curr-page">Отзывы</div>
+                            </div>
+                        </div>
+                        <div class="default-grid__block">
+                            <p class="reviews-list__text text">Мы стремимся стать лучше и будем рады любым Вашим отзывам о работе нашей компании. Мы обязательно рассмотрим все ваши сообщения и постараемся разъяснить все возникающие вопросы.</p>
+                        </div>
+                        <div class="reviews-list__contacts default-grid__block">
+                            <div>Свои мнения и пожелания присылайте нам на почту</div>
+                            <a  class="reviews-list__contacts-mail" href="">unikdom@mail.ru</a>
+                        </div>
+                        <div class="rewiew-block-grid default-grid__block">
+                            <div class="rewiew-block-grid__content">
+                                <div class="rewiew-block-grid__header">
+                                    <h5>Денис Савушкин</h5>
+                                    <div class="stars">
+                                        <img src="./ui-icons/star.svg" alt="star">
+                                        <img src="./ui-icons/star.svg" alt="star">
+                                        <img src="./ui-icons/star.svg" alt="star">
+                                        <img src="./ui-icons/star.svg" alt="star">
+                                        <img src="./ui-icons/star.svg" alt="star">
+                                    </div>
+                                </div>
+                                <div class="rewiew-block-grid__text">
+                                    <p class="text">
+                                        Выражаю благодарность коллективу компании «УникДом» и лично генеральному директору Лунгу Михаилу за высокое качество выполненных работ.Работы по реконструкции кровли выполнялись в августе 2023 года. Весь комплекс работ был выполнен на должном профессиональном уровне, качественно и в установленные сроки.Особенно хочется отметить соблюдение работниками компании «УНИКДОМ» технологии выполнения работ и поддержание чистоты на объекте на протяжении всего ремонта.Готов рекомендовать данную строительную фирму как надёжного, квалифицированного, эффективного подрядчика.
+                                        Оказанные услуги — реконструкция кровли в д. Бабёнки, Вороновское поселение.
+                                    </p>
+                                </div>
+                                <div class="rewiew-block-grid__date">25.08.20</div>
+                            </div>
+                            <a class="rewiew-block-grid__link btn btn-link" href="#">
+                                <div class="btn-link__text">Читать полностью</div>
+                                <img class="btn-link__img" src="./ui-icons/blue-arrow-right.svg" alt="перейти">
+                            </a>
+                        </div>
+                        <div class="rewiew-block-grid default-grid__block">
+                            <div class="rewiew-block-grid__content">
+                                <div class="rewiew-block-grid__header">
+                                    <h5>Лариса</h5>
+                                    <div class="stars">
+                                        <img src="./ui-icons/star.svg" alt="star">
+                                        <img src="./ui-icons/star.svg" alt="star">
+                                        <img src="./ui-icons/star.svg" alt="star">
+                                        <img src="./ui-icons/star.svg" alt="star">
+                                        <img src="./ui-icons/star.svg" alt="star">
+                                    </div>
+                                </div>
+                                <div class="rewiew-block-grid__text">
+                                    <p class="text">
+                                        На участке был возведён каркас пристройки к дому. Необходимо было возвести кровлю, причём в сжатые сроки. Знакомые порекомендовали обратиться в компанию «УникДом». Оперативно были произведены необходимые замеры, составлена смета, договор и начато строительство с фото фиксацией выполненных работ. Высокий профессионализм специалистов, качество, сроки, сопровождение — всё это повлияло на дальнейшее решение о продолжении строительства каркасной пристройки к дому с компанией «УникДом». Выражаем огромную благодарность коллективу.
+                                    </p>
+                                </div>
+                                <div class="rewiew-block-grid__date">25.08.20</div>
+                            </div>
+                            <a class="rewiew-block-grid__link btn btn-link" href="#">
+                                <div class="btn-link__text">Читать полностью</div>
+                                <img class="btn-link__img" src="./ui-icons/blue-arrow-right.svg" alt="перейти">
+                            </a>
+                        </div>
+                        <div class="rewiew-block-grid rewiew-block-grid--horizontal-large  grid__block--full-row">
+                            <div class="rewiew-block-grid__content__images">
+                                <img src="./images/services/services-1.jpg" alt="">
+                                <img src="./images/services/services-1.jpg" alt="">
+                                <img class="rewiew-block-grid__image--large" src="./images/services/services-1.jpg" alt="">
+                            </div>
+                            <div class="rewiew-block-grid__content">
+                                <div class="rewiew-block-grid__header">
+                                    <h5>Филатов Данил Анатольевич</h5>
+                                    <div class="stars">
+                                        <img src="./ui-icons/star.svg" alt="star">
+                                        <img src="./ui-icons/star.svg" alt="star">
+                                        <img src="./ui-icons/star.svg" alt="star">
+                                        <img src="./ui-icons/star.svg" alt="star">
+                                        <img src="./ui-icons/star.svg" alt="star">
+                                    </div>
+                                </div>
+                                <div class="rewiew-block-grid__text">
+                                    <p class="text">
+                                        Меня зовут Филатов Данил Анатольевич. Пишу благодарственное письмо для фирмы ООО «УникДом». Эту фирму мне порекомендовали знакомые. Сначала мы созвонились с менеджером и обсудили работы, которые необходимо сделать.
+                                        В тот же день ко мне приехал замерщик Роман. Уже на месте мы обсудили все нюансы по реконструкции кровли пристройки. Мне очень понравился тот факт, что замерщик приехал с образцами и у меня была возможность выбрать материалы для работ. Через два дня мне прислали коммерческое предложение на материалы и монтажные работы. Я ознакомился с ценами, они меня полностью устроили. далее мы заключили договор.
+                                        На следующий день приступили к работам по монтажу кровли на пристройку рядом с домом. Работы начали с пристройки потому что я хотел проверить качество их работ. После завершения я остался очень доволен и без сомнений передал работу по реконструкции кровли на дом. Работы осуществляли два монтажника — Павел и Роман, а также их помощник Андрей. Работу выполнили очень качественно, а самое главное в срок. Хочу выразить большую благодарность компании «УникДом» и генеральному директору Лунгу Михаилу Александровичу.
+                                    </p>
+                                </div>
+                                <div class="rewiew-block-grid__date">15.08.2020</div>
+                            </div>
+                            <a class="rewiew-block-grid__link btn btn-link" href="#">
+                                <div class="btn-link__text">Читать полностью</div>
+                                <img class="btn-link__img" src="./ui-icons/blue-arrow-right.svg" alt="перейти">
+                            </a>
+                        </div>
+                        <div class="rewiew-block-grid rewiew-block-grid--vertical-large">
+                            <div class="rewiew-block-grid__content__images">
+                                <img src="./images/services/services-1.jpg" alt="">
+                            </div>
+                            <div class="rewiew-block-grid__content">
+                                <div class="rewiew-block-grid__header">
+                                    <h5>Марина</h5>
+                                    <div class="stars">
+                                        <img src="./ui-icons/star.svg" alt="star">
+                                        <img src="./ui-icons/star.svg" alt="star">
+                                        <img src="./ui-icons/star.svg" alt="star">
+                                        <img src="./ui-icons/star.svg" alt="star">
+                                        <img src="./ui-icons/star.svg" alt="star">
+                                    </div>
+                                </div>
+                                <div class="rewiew-block-grid__text">
+                                    <p class="text">
+                                        В августе 2018г. обратились в СК”УНИКДОМ” за услугой: покрыть крышу металлочерепицей М28. Генеральный директор компании Михаил Лунгу приехал к нам на объект для замера крыши. По эл.почте был отправлен расчет металлочерепицы, смета и договор. Организацию и координацию процесса доставки металлочерепицы и ее комплектующих Михаил выполнил быстро и профессионально.
+                                        Строительные работы выполняли Леонид и Юрий качественно и профессионально. Прежде чем обратиться в СК”УНИКДОМ”, мы отказались от подрядчиков, которые строили дом, чтобы они нам делали крышу и правильно сделали, так как они нам ее испортили бы. Крыша – одна из главных составляющих дома и монтаж ее надо доверять только профессионалам по кровлям.
+                                        Компанию СК”УНИКДОМ” мы уже рекомендовали друзьям, так как у них была проблема с крышей, она протекала. Будем и в дальнейшем рекомендовать компанию “УНИКДОМ” своим знакомым. В 2019г будем обращаться в “УНИКДОМ” для монтажа софитов и водосточной системы. Выражаю благодарность директору фирмы ООО СК УНИКДОм Михаилу Лунгу за расчет, обеспечение материалами и информативную помощь при замене кровли дачного дома.
+                                        Особая благодарность руководителю работ Михаилу Лунгу за точность сметы, а также дополнительные скидки как на работы, так и на материалы и просто как человеку, который гордится своей работой и стремлением все больше повысить профессионализм и качество исполнения. Надеюсь, что компания в будущем все так же будет лояльна к постоянным клиентам и все так же будет радовать своим профессионализмом и качеством работ.
+                                    </p>
+                                </div>
+                                <div class="rewiew-block-grid__date">15.08.2020</div>
+                            </div>
+                            <a class="rewiew-block-grid__link btn btn-link" href="#">
+                                <div class="btn-link__text">Читать полностью</div>
+                                <img class="btn-link__img" src="./ui-icons/blue-arrow-right.svg" alt="перейти">
+                            </a>
+                        </div>
+                        <div class="rewiew-block-grid rewiew-block-grid--vertical-large">
+                            <div class="rewiew-block-grid__content__images">
+                                <img src="./images/services/services-1.jpg" alt="">
+                            </div>
+                            <div class="rewiew-block-grid__content">
+                                <div class="rewiew-block-grid__header">
+                                    <h5>Дугин Вячеслав</h5>
+                                    <div class="stars">
+                                        <img src="./ui-icons/star.svg" alt="star">
+                                        <img src="./ui-icons/star.svg" alt="star">
+                                        <img src="./ui-icons/star.svg" alt="star">
+                                        <img src="./ui-icons/star.svg" alt="star">
+                                        <img src="./ui-icons/star.svg" alt="star">
+                                    </div>
+                                </div>
+                                <div class="rewiew-block-grid__text">
+                                    <p class="text">
+                                        В сентябре этого года компания “СК УНИКДОМ” выполняла работы по реконструкции стропильной системы мансардного этажа деревянного дачного дома, изготовлению кровли с гибкой битумной черепицей Shinglas (Шинглас), строительство выносного балкона и утепление фасадов дома.
+                                        Работы были организованы на хорошем уровне, в установленные сроки были завезены материалы и персонал для выполнения работ. Все строительные работы проводились в соответствии с согласованной Сметой (отдельная благодарность руководителю компании Лунгу Михаилу за грамотные советы и консультации), к своей работе монтажники подходили с ответственностью, все возникающие в процессе вопросы решались максимально быстро, на высоко-профессиональном уровне.
+                                        Большое спасибо монтажникам Максиму и Максиму, которые выполняли работы как будто бы делают дом для себя. Я работаю с компанией УНИКДОМ уже не в первый раз и рекомендую всем данную организацию для выполнения работ по кровле и фасадам.
+                                    </p>
+                                </div>
+                                <div class="rewiew-block-grid__date">15.08.2020</div>
+                            </div>
+                            <a class="rewiew-block-grid__link btn btn-link" href="#">
+                                <div class="btn-link__text">Читать полностью</div>
+                                <img class="btn-link__img" src="./ui-icons/blue-arrow-right.svg" alt="перейти">
+                            </a>
+                        </div>
+                        <div class="rewiew-block-grid default-grid__block">
+                            <div class="rewiew-block-grid__content">
+                                <div class="rewiew-block-grid__header">
+                                    <h5>Пастриков Олег</h5>
+                                    <div class="stars">
+                                        <img src="./ui-icons/star.svg" alt="star">
+                                        <img src="./ui-icons/star.svg" alt="star">
+                                        <img src="./ui-icons/star.svg" alt="star">
+                                        <img src="./ui-icons/star.svg" alt="star">
+                                        <img src="./ui-icons/star.svg" alt="star">
+                                    </div>
+                                </div>
+                                <div class="rewiew-block-grid__text">
+                                    <p class="text">
+                                        Хотел бы выразить свою благодарность компании «Уникдом» и лично Михаилу Александровичу (ген. дир.) Редко встречаешь таких людей, так любящих своё дело. Михаила Александровича знаю более 10 лет, на строительстве моего первого дома. Кровля служит, и по сей день, и никаких нареканий! С тех пор, все мои знакомые делают кровлю только с Михаилом. А те, кто делал не у него, потом, обращаются к нему, что бы доделать, либо переделать.
+                                        Компания очень тесно сотрудничает с фирмой «Уникма» (Российский лидер по кровельным материалам) является партнером. «Уникма», очень тщательно следит за ходом работы своих партнеров, постоянно отправляются фото в тех отд. Уникмы, где фиксируют каждый этап работы. Когда в 2014г. построил новый дом, то кто будет монтировать кровлю, вопрос не возникал.
+                                        Михаил, приехал, произвел расчет по материалам, подсказал, что нового появилось на рынке кровельных материалов. Помог с выбором материалов, и с доставкой. Фирма «Уникдом» имеет большую скидку в фирме «Уникма», которую полностью отдаёт заказчику. В общем, кто еще стоит перед выбором, однозначно компания «Уникдом» Если кто, хочет убедиться в качестве их работ, приезжайте и посмотрите на мои дома.
+                                        Да, чуть не забыл, хотел бы выразить отдельную благодарность монтажникам этой фирмы, Леониду и Юрию, работники от бога, могут кровлю смонтировать с закрытыми глазами. Первое знакомство было на первой моей кровле, с тех пор, всегда прошу Михаила, что бы моим знакомым монтировали только они.
+                                        Наверное, у фирмы все бригады хорошие, зная подход Михаила, у него только профи! Но я, рассказал, про тех, которых испытал на себе. И новый дом монтировали, тоже они. Еще и веранду за два дня пристроили. Всем рекомендую!
+                                    </p>
+                                </div>
+                                <div class="rewiew-block-grid__date">25.08.20</div>
+                            </div>
+                            <a class="rewiew-block-grid__link btn btn-link" href="#">
+                                <div class="btn-link__text">Читать полностью</div>
+                                <img class="btn-link__img" src="./ui-icons/blue-arrow-right.svg" alt="перейти">
+                            </a>
+                        </div>
+                        <div class="rewiew-block-grid default-grid__block">
+                            <div class="rewiew-block-grid__content">
+                                <div class="rewiew-block-grid__header">
+                                    <h5>Бутырский Алексей Петрович</h5>
+                                    <div class="stars">
+                                        <img src="./ui-icons/star.svg" alt="star">
+                                        <img src="./ui-icons/star.svg" alt="star">
+                                        <img src="./ui-icons/star.svg" alt="star">
+                                        <img src="./ui-icons/star.svg" alt="star">
+                                        <img src="./ui-icons/star.svg" alt="star">
+                                    </div>
+                                </div>
+                                <div class="rewiew-block-grid__text">
+                                    <p class="text">
+                                        Выражаю благодарность коллективу компании «УникДом» и лично генеральному директору Лунгу Михаилу за высокое качество выполненных работ.Работы по реконструкции кровли выполнялись в августе 2023 года. Весь комплекс работ был выполнен на должном профессиональном уровне, качественно и в установленные сроки.Особенно хочется отметить соблюдение работниками компании «УНИКДОМ» технологии выполнения работ и поддержание чистоты на объекте на протяжении всего ремонта.Готов рекомендовать данную строительную фирму как надёжного, квалифицированного, эффективного подрядчика.
+                                        Оказанные услуги — реконструкция кровли в д. Бабёнки, Вороновское поселение.
+                                    </p>
+                                </div>
+                                <div class="rewiew-block-grid__date">25.08.20</div>
+                            </div>
+                            <a class="rewiew-block-grid__link btn btn-link" href="#">
+                                <div class="btn-link__text">Читать полностью</div>
+                                <img class="btn-link__img" src="./ui-icons/blue-arrow-right.svg" alt="перейти">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews-list__btn">
+                    <button class="btn btn--empty">Показать еще...</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="upper-footer">
+                <div class="upper-footer__column first-column">
+                    <a class="logo upper-footer__logo" href="#"><img src="./images/logo.svg" alt="Уникдом"></a>
+                    <p>Занимаемся кровельными <br> работами, монтажем сайдинга и водосточными системами более 10 лет. Ценим свою репутацию и уважаем наших клиентов.</p>
+                    <div>© 2023 Unikdom.ru</div>
+                </div>
+                <nav class="footer-navigation">
+                    <ul class="upper-footer__column second-column">
+                            <li><a href="#" class="upper-footer__link">Услуги</a></li>
+                            <li><a href="#" class="upper-footer__link">Наши работы</a></li>
+                            <li><a href="#" class="upper-footer__link">Цены</a></li>
+                            <li><a href="#" class="upper-footer__link">О компании</a></li>
+                            <li><a href="#" class="upper-footer__link">Контакты</a></li>
+                    </ul>
+                    <ul class="upper-footer__column third-column">
+                        <li><a href="#" class="upper-footer__link">Монтаж кровли</a></li>
+                        <li><a href="#" class="upper-footer__link">Ремонт кровли</a></li>
+                        <li><a href="#" class="upper-footer__link">Капремонт и реконструкция кровли</a></li>
+                        <li><a href="#" class="upper-footer__link">Водостоки</a></li>
+                        <li><a href="#" class="upper-footer__link">Фасадные работы</a></li>
+                        <li><a href="#" class="upper-footer__link">Блок хаус</a></li>
+                    </ul>
+                </nav>
+                <div class="upper-footer__column fourth-column">
+                    <div>
+                        <div class="socials upper-footer__socials">
+                            <a href="#" class="socials__link"><img src="./ui-icons/socials/youtube.svg" alt="youtube"></a>
+                            <a href="#" class="socials__link"><img src="./ui-icons/socials/tg.svg" alt="telegramm"></a>
+                            <a href="#" class="socials__link"><img src="./ui-icons/socials/whatsapp.svg" alt="watsapp"></a>
+                        </div>
+                        <div>Люблинская ул, дом 40, г. Москва</div>
+                    </div>
+                    <div>
+                        <button class="btn callback-order-btn btn--empty upper-footer__btn" data-modal>Заказать обратный звонок</button>
+                        <div class="search upper-footer__search">
+                            <input class="search__input search__input--light" type="text">
+                            <button class="search__btn"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer"></div>
+        </div>
+    </footer>
+
+    <div id="overlay">
+        <div id="modal-callback" class="modal">
+            <div class="modal-callback__content">
+                <div class="modal-callback__img">
+                    <img src="./images/modal-img.jpg">
+                </div>
+                <form action="" class="form modal-callback__form">
+                    <h4 class="modal-callbac-title form-title">Форма обратной связи</h4>
+                    <input class="modal-callbac-input form-input" name="name" type="text" placeholder="Ваше имя">
+                    <input class="modal-callbac-input form-input" name="email" type="email" placeholder="Ваша электронная почта">
+                    <input class="modal-callbac-input form-input" name="phone" type="tel" placeholder="Ваш номер телефона">
+                    <button class="btn modal-callbac-btn form-btn">Отправить</button>
+                    <p class="modal-callbac-info form-info">Нажимая на кнопку, вы соглашаетесь с<br><a href="#">Политикой конфиденциальности</a></p>
+                </form>
+                <button class="modal__close-btn" data-close-modal><img src="./ui-icons/close.svg" alt=""></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/setFullHeight.js"></script>
+    <script src="./js/media.js"></script>
+</body>
+</html>

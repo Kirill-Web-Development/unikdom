@@ -1,6 +1,7 @@
 .certificates{
     color: #fff;
     background: url('../../ui-icons/slider/bg-image.svg') top left/180px 100% no-repeat, var(--dark-bg);
+    margin-bottom: 180px;
 }
 
 .certificates__inner{
@@ -193,6 +194,10 @@
 }
 
 @media (max-width: 480px) {
+    .certificates{
+        margin-bottom: 150px;
+    }
+    
     .swiper-navigation{
         left: 40px;
         top: 125px;

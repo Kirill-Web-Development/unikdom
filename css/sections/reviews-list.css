@@ -1,0 +1,13 @@
+.reviews-list{
+    margin-bottom: 180px;
+}
+
+.reviews-list__contacts{
+    padding-left: 69px;
+}
+
+.reviews-list__btn{
+    display: flex;
+    justify-content: center;
+    margin: 90px 0 180px 0;
+}

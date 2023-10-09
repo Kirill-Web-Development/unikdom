@@ -16,6 +16,7 @@
 @import './common/header/upper-menu.css';
 @import './common/header/bottom-menu.css';
 @import './sections/main-offer.css';
+@import './elements/grid/default-grid.css';
 @import './elements/grid/image-block-grid-block.css';
 @import './elements/grid/rewiew-block-grid.css';
 @import './sections/services.css';
