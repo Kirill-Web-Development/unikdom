@@ -28,4 +28,5 @@
 @import './elements/stars.css';
 @import './sections/reviews.css';
 @import './sections/map.css';
-@import './common/footer/upper__footer.css';
+@import './common/footer/upper-footer.css';
+@import './common/footer/bottom-footer.css';

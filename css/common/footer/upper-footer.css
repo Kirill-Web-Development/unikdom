@@ -1,0 +1,127 @@
+.footer{
+    background: var(--lightest-neutral);
+}
+
+.upper-footer__column{
+    display: flex;
+    flex-direction: column;
+    margin-right: 25px;
+}
+
+.upper-footer__column:last-of-type{
+    margin-right: 0;
+}
+
+.upper-footer__column.first-column{
+    row-gap: 30px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--darkest-neutral);
+    max-width: 290px;
+}
+
+.upper-footer__column.second-column{
+    row-gap: 24px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #282828;
+}
+
+.upper-footer__column.third-column{
+    row-gap: 24px;
+}
+
+.upper-footer__column.fourth-column {
+    width: 392px;
+    row-gap: 30px;
+}
+
+.upper-footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    padding-top: 155px;
+    padding-bottom: 80px;
+}
+
+.footer-navigation{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 80px;
+    width: 420px;
+}
+
+.footer-navigation .upper-footer__link:hover {
+    color: var(--accent)
+}
+
+.upper-footer__btn{
+    width: 100%;
+    margin-bottom: 62px;
+}
+
+.upper-footer__search{
+    width: 100%;
+}
+
+.upper-footer__socials{
+    margin-bottom: 39.5px;
+}
+
+
+/* ================MEDIA======================== */
+
+@media (max-width: 1000px) {
+    .upper-footer__column.fourth-column {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 782px) {
+    .upper-footer{
+        flex-direction: column;
+    }
+
+    .upper-footer__column.first-column{
+        max-width: 100%;
+    }
+
+    .footer-navigation{
+        width: 100%;
+    }
+
+    .upper-footer__column.fourth-column {
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .upper-footer__column.fourth-column > div {
+        width: 100%;
+    }
+
+    .upper-footer__btn{
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 400px) {
+    .footer-navigation{
+        flex-wrap: wrap;
+        gap: 60px;
+    }
+
+    .upper-footer__column.second-column {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 48px;
+    }
+}

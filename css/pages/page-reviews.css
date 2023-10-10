@@ -16,9 +16,11 @@
 @import './../common/header/sale-offer.css';
 @import './../common/header/upper-menu.css';
 @import './../common/header/bottom-menu.css';
+@import './../elements/breadcrumb.css';
 @import './../elements/grid/default-grid.css';
 @import './../elements/grid/image-block-grid-block.css';
 @import './../elements/grid/rewiew-block-grid.css';
 @import './../sections/reviews-list.css';
 @import './../sections/see-also.css';
-@import './../common/footer/upper__footer.css';
+@import './../common/footer/upper-footer.css';
+@import './../common/footer/bottom-footer.css';

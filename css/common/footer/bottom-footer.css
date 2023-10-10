@@ -1,0 +1,31 @@
+.bottom-footer{
+    background: var(--dark-bg);
+    color: #fff;
+    padding: 30px 0px;
+}
+
+.bottom-footer__inner{
+    display: flex;
+    column-gap: 60px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+}
+
+.bottom-footer__link{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.bottom-footer__link:hover{
+    text-decoration: underline;
+}
+
+
+
+@media (max-width: 480px) {
+    .bottom-footer{
+        padding: 20px 0px;
+    }
+}

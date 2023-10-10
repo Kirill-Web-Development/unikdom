@@ -1,0 +1,29 @@
+.breadcrumb{
+    display: flex;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: var(--accent);
+    column-gap: 60px;
+    row-gap: 20px;
+}
+
+.breadcrumb__item{
+    position: relative;
+}
+
+.breadcrumb__item:not(:last-of-type)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -40px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: var(--neutral);
+}
+
+.breadcrumb__item--current{
+    color: var(--neutral)
+}
