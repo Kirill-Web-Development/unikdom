@@ -24,6 +24,6 @@
     background: var(--neutral);
 }
 
-.breadcrumb__item--current{
+.breadcrumb__item:last-of-type{
     color: var(--neutral)
 }

@@ -22,5 +22,7 @@
 @import './../elements/grid/rewiew-block-grid.css';
 @import './../sections/reviews-list.css';
 @import './../sections/see-also.css';
+@import './../sections/make-review.css';
+@import './../elements/contacts-blue-block.css';
 @import './../common/footer/upper-footer.css';
 @import './../common/footer/bottom-footer.css';

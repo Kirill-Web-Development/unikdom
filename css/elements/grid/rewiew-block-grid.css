@@ -19,6 +19,7 @@
 .rewiew-block-grid__header{
     display: flex;
     flex-wrap: wrap;
+    column-gap: 20px;
     justify-content: space-between;
     row-gap: 22.5px;
 }

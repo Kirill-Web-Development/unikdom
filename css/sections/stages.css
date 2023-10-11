@@ -1,5 +1,6 @@
 .stages{
     margin-bottom: 180px;
+    overflow: hidden;
 }
 .stages__title{
     margin-bottom: 60px;

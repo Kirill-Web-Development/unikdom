@@ -8,3 +8,12 @@
     width: 20px;
     height: 19px;
 }
+
+.stars.stars--large{
+    column-gap: 20px;
+}
+
+.stars.stars--large> img {
+    width: 30px;
+    height: 29px;
+}

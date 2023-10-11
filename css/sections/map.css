@@ -83,51 +83,6 @@
     margin-bottom: 30px;
 }
 
-/* .map__form{
-    padding: 50px;
-}
-
-.map__form-btn{
-    width: 100%;
-    min-width: 100%;
-    margin-bottom: 24px;
-}
-
-.map__form-info{
-    text-align: center;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-} */
-
-/* .map__form-title{
-    color: var(--accent);
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.map__form-info a{
-    color: var(--accent);
-} */
-
-/* .map__form-input{
-    padding: 14px 20px 14px 0px;
-    border-bottom: 2px solid var(--neutral);
-    color: var(--neutral);
-    width: 100%;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin-bottom: 20px;
-}
-
-.map__form-input:last-of-type{
-    margin-bottom: 50px;
-} */
-
-
 .map__contacts{
     width: 1300px;
     color: #fff;
