@@ -9,6 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    column-gap: 20px;
     background-color: var(--accent);
     position: absolute;
     bottom: 0;
@@ -38,8 +39,17 @@
     }
 }
 
+@media (max-width: 920px) {
+    .contacts{
+        justify-content: center;
+    }
+    
+}
+
+
 @media (max-width: 830px) {
     .contacts{
+        justify-content: space-between;
         font-size: 40px;
         padding: 50px 46px;
     }

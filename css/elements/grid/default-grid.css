@@ -17,5 +17,13 @@
 @media (max-width: 768px) {
     .default-grid{
         grid-template-columns:1fr;
+        row-gap: 50px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .default-grid{
+        row-gap: 40px;
     }
 }

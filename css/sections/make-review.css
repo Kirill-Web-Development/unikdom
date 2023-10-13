@@ -68,3 +68,32 @@
 .review-form__stars{
     margin-bottom: 50px;
 }
+
+
+
+/* ================= MEDIA ======================= */
+
+
+@media (max-width: 1080px) {
+    .make-review__form{
+        width: 100%;
+    }    
+}
+
+@media (max-width: 768px) {
+    .make-review__form {
+        grid-template-columns: 1fr;
+        gap: 20px 60px;
+    }
+
+    .make-review__form > * {
+        grid-column: 1/3;
+    }
+
+    .review-form__footer{
+        flex-direction: column;
+        align-items: start;
+        row-gap: 24px;
+    }
+}
+

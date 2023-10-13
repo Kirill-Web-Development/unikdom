@@ -12,3 +12,8 @@
     z-index: 1;
 }
 
+@media (max-width: 768px) {
+    .image-block-grid-block > img{
+        width: 100%;
+    }
+}
