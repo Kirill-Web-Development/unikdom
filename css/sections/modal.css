@@ -59,7 +59,7 @@
 
 .modal-callback__img img {
     display: block;
-    max-height: 100%;
+    height: 100%;
     width: 100%;
     object-fit: cover;
 }
@@ -90,6 +90,20 @@
 @media (max-width: 1250px) {
     #modal-callback{
         width: 90%;
+    }
+}
+
+@media (max-width: 1000px) {
+    #modal-callback {
+        width: 90%;
+        position: absolute;
+        left: 50%;
+        top: calc(50% + 50px);
+        z-index: 50;
+        height: 78%;
+        min-height: 600px;
+        transform: translate(-50%, -50%);
+        background: var(--neutral);
     }
 }
 

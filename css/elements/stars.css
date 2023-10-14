@@ -17,3 +17,19 @@
     width: 30px;
     height: 29px;
 }
+
+
+
+@media (max-width: 480px) {
+    .stars.stars--large> img  {
+        width: 26px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 360px) {
+    .stars.stars--large> img  {
+        width: 20px;
+        height: 20px;
+    }
+}

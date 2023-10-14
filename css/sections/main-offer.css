@@ -10,7 +10,6 @@
     margin-bottom: 60px;
 }
 
-
 .main-offer__title{
     margin-bottom: 40px;
 }
@@ -70,6 +69,10 @@
 @media (max-width: 480px) {
     .main__offer-btns .btn{
         width: 100%;
+    }
+
+    .main-offer {
+        margin-bottom: 150px;
     }
 }
 

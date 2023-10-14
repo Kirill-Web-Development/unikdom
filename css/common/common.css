@@ -3,16 +3,13 @@ body {
     background: var(--light-bg);
 }
 
-.header{
-    position: relative;
-}
-
-
 @media (max-width: 1000px) {
     .header{
         position: fixed;
         width: 100%;
-        z-index: 20;
+        z-index: 100;
+        top: 0;
+        left: 0;
     }
 
     main {

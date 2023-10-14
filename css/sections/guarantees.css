@@ -124,6 +124,9 @@
 }
 
 @media (max-width: 480px) {
+    .guarantees {
+        margin-bottom: 170px;
+    }
 
     .guarantees__title{
         margin-bottom: 30px;

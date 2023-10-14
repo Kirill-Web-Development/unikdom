@@ -112,6 +112,10 @@
 }
 
 @media (max-width: 480px) {
+    .materials {
+        margin-bottom: 150px;
+    }
+
     .materials__grid{
         grid-template-columns: 1fr;
         grid-template-rows: 260px;

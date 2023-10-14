@@ -62,6 +62,10 @@
     display: none;
 }
 
+.upper-menu.upper-menu--small{
+    padding-top: 20px;
+}
+
 /* ==================MEDIA============================ */
 
 @media (max-width: 1300px) {

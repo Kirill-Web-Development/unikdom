@@ -107,6 +107,12 @@
         font-size: 14px;
         transform: translateY(0%);
     }
+
+    .about {
+        position: relative;
+        padding-bottom: 0px;
+        margin-bottom: 150px;
+    }
     
 }
 

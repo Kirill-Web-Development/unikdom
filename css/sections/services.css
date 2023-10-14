@@ -17,6 +17,11 @@
 }
 
 @media (max-width: 480px) {
+    .services{
+        margin-bottom: 170px;
+    }
+
+    
     .title-block-with-link{
         display: flex;
         flex-direction: column;
@@ -24,6 +29,10 @@
         align-items: unset;
         row-gap: 30px;
         margin-bottom: 30px;
+    }
+
+    .services .default-grid{
+        row-gap: 60px;
     }
 }
 

@@ -97,3 +97,34 @@
     }
 }
 
+@media (max-width: 480px) {
+   
+    .review-form .form-input{
+    padding-bottom: 27px;
+   }
+
+   .review-form .form-input::placeholder {
+        white-space: pre-wrap; /* Этот стиль позволяет переносить текст по строчкам */
+    }
+
+    .review-form__textarea {
+        height: 140px;
+    }
+
+    .make-review__form {
+        padding: 40px 30px;
+    }
+}
+
+
+@media (max-width: 360px) {
+
+    .make-review__form {
+        padding: 30px 20px;
+    }
+
+    .review-form__stars {
+        margin-bottom: 20px;
+    }
+}
+
