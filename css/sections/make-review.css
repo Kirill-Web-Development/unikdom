@@ -117,6 +117,15 @@
 }
 
 
+@media (max-width: 420px) {
+   
+    .review-form__footer .form-info {
+        text-align: center;
+    }
+}
+
+
+
 @media (max-width: 360px) {
 
     .make-review__form {
